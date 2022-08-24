@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: MuotoWeb, sans-serif;
+    color: #1d1e1c;
+    font-weight: normal;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#features-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: auto;
+}
+
+.littlesec,
+.childDiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: 80px;
+}
+
+.imag {
+    height: 50%;
+}
+
+.head {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.para {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.content {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+hr {
+    border-top: 1px solid red;
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width:1050px) {
+    #features-navigation {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+}
+

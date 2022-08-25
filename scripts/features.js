@@ -111,7 +111,7 @@ let data1 = [{
 }];
 let sectionfun3 = (data) => {
     let wrapper3 = document.createElement('div');
-    wrapper3.setAttribute('class', 'wrapper3')
+    wrapper3.setAttribute('class', 'wrapper3');
     data.forEach(elem => {
         let childsec = document.createElement('div');
         childsec.setAttribute('class', 'childsec');

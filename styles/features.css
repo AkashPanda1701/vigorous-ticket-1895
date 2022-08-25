@@ -65,3 +65,39 @@ hr {
 
 }
 
+@media screen and (max-width:960px) {
+    .wrapper2 {
+        display: grid;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .btn2 {
+        width: 100%;
+        margin-bottom: 50px;
+        height: 60px;
+    }
+
+    .wrapper3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .portsec1,
+    .childsec_2 {
+        display: none;
+    }
+
+    .childsec_1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .headh2 {
+        font-size: 32px;
+        line-height: 30px;
+    }
+}
+

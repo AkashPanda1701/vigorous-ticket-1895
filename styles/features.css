@@ -10,6 +10,7 @@ body {
     width: 90%;
     margin: auto;
     margin-bottom: 100px;
+    padding-top: 50px;
 }
 
 #features-navigation {
@@ -43,6 +44,8 @@ body {
 .para {
     font-size: 30px;
     font-weight: normal;
+    padding-bottom: 60px;
+    line-height: 70px;
 }
 
 .content {
@@ -87,7 +90,7 @@ hr {
     color: rgba(250, 93, 0, 100%);
     font-size: 45px;
     font-weight: initial;
-    line-height: 0px;
+    line-height: 100px;
 }
 
 .p3,
@@ -106,6 +109,7 @@ hr {
     font-size: 20px;
     font-weight: 500;
     border-radius: 15px;
+    margin-top: 30px;
 }
 
 .wrapper3 {

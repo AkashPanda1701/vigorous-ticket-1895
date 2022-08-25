@@ -1,12 +1,12 @@
-// import {navbar,openMenu,closeMenu} from '../component/navbar.js';
-// console.log(navbar);
-// document.querySelector("header").innerHTML=navbar();
-// document.querySelector("#openmenu").addEventListener('click',openMenu);
-// document.querySelector("#closemenu").addEventListener('click',closeMenu);
+import {navbar,openMenu,closeMenu} from '../component/navbar.js';
+console.log(navbar);
+document.querySelector("header").innerHTML=navbar();
+document.querySelector("#openmenu").addEventListener('click',openMenu);
+document.querySelector("#closemenu").addEventListener('click',closeMenu);
 
-// import footer from '../component/footer.js';
-// console.log('footer:', footer);
-// document.querySelector("footer").innerHTML = footer();
+import footer from '../component/footer.js';
+console.log('footer:', footer);
+document.querySelector("footer").innerHTML = footer();
 
 let container = document.querySelector('#container');
 let container2 = document.querySelector('#container2');
@@ -123,7 +123,7 @@ let sectionfun3 = (data) => {
         let headh4 = document.createElement('h4');
         headh4.setAttribute('class', 'headh4');
         headh4.innerText = elem.head;
-        p3 = document.createElement('p');
+        let p3 = document.createElement('p');
         p3.setAttribute('class', 'p3');
         p3.innerText = elem.para;
         smallchild.append(image4, headh4);

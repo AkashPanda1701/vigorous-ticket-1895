@@ -31,7 +31,7 @@
 #footer > div:first-child p{
     margin-bottom: 1.5%;
     margin-top: 1.5%;
-    font-size: larger;
+    font-size: large;
     color: aliceblue;
 }
 
@@ -50,6 +50,8 @@
 }
 
 #footer > div:nth-child(2) > div{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -140,7 +142,7 @@ span{
     #footer > div:first-child p{
         margin-bottom: 1.5%;
         margin-top: 1.5%;
-        font-size: large;
+        font-size: 16px;
         color: aliceblue;
     }
 
@@ -195,7 +197,7 @@ span{
     }
 
     #footer > div:first-child p{
-        font-size: medium;
+        font-size: 13px;
         margin-bottom: 1%;
         margin-top: 1%;
         color: aliceblue;
@@ -220,13 +222,14 @@ span{
         flex-direction: column;
         text-align: left;
         color: gray;
-        font-size: 20px;
+        font-size: 15px;
+        padding-bottom: 3%;
     }
 
     #footer > div:nth-child(2) > div{
         width: 60%;
         margin: auto;
-        margin-top: 25%;
+        margin-top: 20%;
         margin-bottom: 10%;
         padding-left: 6%;
         padding-right: 6%;

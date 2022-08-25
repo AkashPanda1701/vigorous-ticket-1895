@@ -1,0 +1,163 @@
+body{
+    background-color: rgb(250, 245, 238);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#homePageContainer{
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1.top-headline{
+    width: 80%;
+    font-family: cursive;
+    font-size: 55px;
+    text-indent: -3px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
+#topHeading > h2{
+    font-size: large;
+}
+
+.checked{
+    color: orangered;
+}
+
+ h1{
+    font-weight: 400;
+    text-decoration: none;
+    font-family: MuotoWeb,sans-serif;
+    font-style: normal;
+    color: #1d1e1c;
+    font-size: 50px;
+}
+
+#gray{
+    color: gray;
+    font-size: 85%;
+}
+
+.btn{
+    background-color: orangered;
+}
+
+#topHeading > button{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 1.2% 2%;
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 15px;
+}
+
+#topHeading > p{
+    font-size: large;
+}
+
+#imageContainer{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#imageContainer > img{
+   width: 100%;
+}
+
+
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    h1.top-headline{
+        font-style: italic;
+        width: 90%;
+        font-family: 'Poppins', sans-serif;;
+        font-size: 30px;
+        text-indent: -3px;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+    
+    #topHeading > div > h2{
+        margin-bottom: 5%;
+        margin-top: 5%;
+        text-align: right;
+        padding-right: 3%;
+        font-size: medium;
+    }
+
+    #topHeading > p{
+        margin-top: 5%;
+        font-size: medium;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #imageContainer > img{
+        margin-bottom: 5%;
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    #topHeading > button{
+        padding: 1.2% 7%;
+        color: white;
+        font-size: large;
+        border: none;
+        border-radius: 15px;
+        margin-top: 5%;
+    }
+}
+
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    h1.top-headline{
+        width: 90%;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Poppins', sans-serif;;
+        font-size: 25px;
+        text-indent: -3px;
+        margin-bottom: 10px;
+        margin: auto;
+    }
+
+    #topHeading > div > h2{
+        text-align: left;
+        padding-left: 3%;
+        font-size: medium;
+        margin-bottom: 5%;
+        margin-top: 5%;
+
+    }
+
+    #topHeading > p{
+        margin-top: 5%;
+        font-size: medium;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #imageContainer > img{
+        margin-bottom: 5%;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #topHeading > button{
+        margin-top: 5%;
+        padding: 2% 7%;
+        color: white;
+        font-size: large;
+        border: none;
+        border-radius: 15px;
+    }
+}

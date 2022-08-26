@@ -3,6 +3,8 @@ document.querySelector("form button").addEventListener("click", Register);
 let RegisterUser = JSON.parse(localStorage.getItem("RegisterUser")) || [];
 
 function Register() {
+  event.preventDefault();
+  
   let form = document.querySelector("form");
 
   class User {
@@ -58,6 +60,7 @@ if(flag){
         
         localStorage.setItem("RegisterUser", JSON.stringify(RegisterUser));
         alert("User registration successful");
+        window.location.href='login.html';
     }
 
     

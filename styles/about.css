@@ -1,14 +1,17 @@
 *{
     font-family:  'Poppins', sans-serif;
     font-weight: 500;
-    margin: 8px 8px;
-    background-color: rgb(248, 242, 238);
-    list-style: circle;
-    
+    /* margin: 8px 8px; */
+    /* background-color: rgb(248, 242, 238); */
+    list-style: circle; 
+}
+body{
+    width: 95%;
+    margin: auto;
 }
 .child{
     text-align: center;
-    
+    color: grey;
 }
 
 header{
@@ -38,6 +41,7 @@ header{
     font-size: 20px;
     border-radius: 13px;
  }
+
  #child2{
     display: flex;
  }
@@ -50,18 +54,29 @@ h2{
     font-size: 45px;
     margin-bottom: 30px;
 }
+
 p,ul{
     margin: 30px 0px 40px 0px;
-
 }
 
-.button{
-    
+.button{  
     background-color:black;
     text-decoration: none;
     color: white;
     padding:10px 20px;
     font-size: 20px;
-    border-radius: 13px;
-   
+    border-radius: 13px; 
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 60px; 
+}
+
+q{
+    font-style: italic; 
+}
+@media screen and (min-width: 300px) and (max-width: 800px){
+    
 }

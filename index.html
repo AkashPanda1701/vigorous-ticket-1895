@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Harvest Home Page</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
-    <header>
-
-    </header>
+    <header></header>
 
     <div id="homePageContainer">
 
+        <!-- first-portion of body i.e. heading things  -->
+                <div id="topHeading">
+                    <div>
+                        <h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star-half-full  checked"></span>
+                            <span>4.6 <span id="gray">(491 reviews)</span></span>
+                        </h2>
+                    </div>
+                    <h1 class="top-headline">Finally, time tracking that your team actually wants to use.</h1>
+                    <p>Intuitive time tracking. Instant report generation. Automatic invoice creation.</p>
+        
+        <!-- add signup page  -->
+        
+                    <button class="btn"><a href="#">Try Harvest free</a> </button>
+                    <p>Free 30-day trial. No credit card required.</p>
+                </div>
+        
+        <!-- second heading portion  -->
+                <div id="imageContainer">
+                    <img src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/1029-Harvest-Home-Center-Align/Hero_Image_2x.jpg" alt="">
+                </div>
     </div>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 </body>
 </html>
 
+
 <script type="module">
+
+   import  { navbar, openMenu, closeMenu } from './component/navbar.js';
+   console.log(navbar);
+   document.querySelector("header").innerHTML = navbar();
+   document.getElementById("openmenu").addEventListener("click",openMenu);
+   document.getElementById("closemenu").addEventListener("click",closeMenu);
+
     import footer from './component/footer.js';
     console.log('footer:',footer);
-    document.querySelector("footer").innerHTML = footer;
+    document.querySelector("footer").innerHTML = footer();
 </script>

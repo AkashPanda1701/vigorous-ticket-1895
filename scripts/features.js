@@ -185,6 +185,61 @@ let sectionfun5 = () => {
 }
 sectionfun5();
 
+let data12 = [{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-budget.svg",
+    head: "Keep budgets on target",
+    para: 'Harvest updates budgets as your team tracks time, so you can keep your projects on track and profitable.',
+},
+{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-capacity.svg",
+    head: "Visualize team capacity",
+    para: 'See who’s overworked and who’s under-utilized at a glance with capacity reporting.',
+},
+{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-costs.svg",
+    head: "Understand costs",
+    para: 'Keep track of internal costs and review past project data to inform future project scope and estimates.',
+},
+{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-analyze.svg",
+    head: "Analyze time spent",
+    para: 'See which projects and tasks are consuming your team’s time and impacting costs.',
+},
+{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-details.svg",
+    head: "Dive into the details",
+    para: 'Powerful filters give you the detailed data needed to understand where your time goes and plan what’s next.',
+},
+{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-data.svg",
+    head: "Do more with your data",
+    para: 'It’s easy to export data from Harvest into the reporting tools you already use to gain additional insights.',
+},
+];
+let sectionfun6 = (data12) => {
+    let wrapper3 = document.createElement('div');
+    wrapper3.setAttribute('class', 'wrapper3');
+    data12.forEach(elem => {
+        let childsec = document.createElement('div');
+        childsec.setAttribute('class', 'childsec');
+        let smallchild = document.createElement('div');
+        smallchild.setAttribute('class', 'smallchild');
+        // childsec.style.border='1px solid red';
+        let image4 = document.createElement('img');
+        image4.setAttribute('src', elem.image);
+        let headh4 = document.createElement('h4');
+        headh4.setAttribute('class', 'headh4');
+        headh4.innerText = elem.head;
+        let p3 = document.createElement('p');
+        p3.setAttribute('class', 'p3');
+        p3.innerText = elem.para;
+        smallchild.append(image4, headh4);
+        childsec.append(smallchild, p3);
+        wrapper3.append(childsec);
+        container6.append(wrapper3);
+    });
+}
 
+sectionfun6(data12);
 
 

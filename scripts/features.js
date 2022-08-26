@@ -11,6 +11,10 @@ document.querySelector("footer").innerHTML = footer();
 let container = document.querySelector('#container');
 let container2 = document.querySelector('#container2');
 let container3 = document.querySelector('#container3');
+let container4 = document.querySelector('#container4');
+let container5 = document.querySelector('#container5');
+let container6 = document.querySelector('#container6');
+let container7 = document.querySelector('#container7');
 
 let trackData = [{
     image: 'https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg',
@@ -239,7 +243,30 @@ let sectionfun6 = (data12) => {
         container6.append(wrapper3);
     });
 }
-
 sectionfun6(data12);
 
-
+let sectionfun7 = () => {
+    let wrapper4 = document.createElement('div');
+    wrapper4.setAttribute('class', 'wrapper4');
+    let portfoliosec1 = document.createElement('div');
+    portfoliosec1.setAttribute('class', 'portsec1');
+    let image6 = document.createElement('img');
+    image6.setAttribute('class', 'image6');
+    image6.setAttribute('src', 'https://www.getharvest.com/hs-fs/hubfs/site-images/features-quote-2.jpg?width=375&name=features-quote-2.jpg');
+    portfoliosec1.append(image6);
+    let portfoliosec2 = document.createElement('div');
+    portfoliosec2.setAttribute('class', 'portsec2');
+    let comment = document.createElement('p');
+    comment.setAttribute('class', 'comment');
+    comment.innerText = 'We really focus on work-life balance in remote work… Time tracking reveals if somebody is overburdened and that becomes an immediate conversation.';
+    let author_name = document.createElement('h3');
+    author_name.setAttribute('class', 'authorName');
+    author_name.innerText = 'Noah Gedrich';
+    let occupation = document.createElement('p');
+    occupation.setAttribute('class', 'occup');
+    occupation.innerText = 'CTO, Zehner';
+    portfoliosec2.append(comment, author_name, occupation);
+    wrapper4.append(portfoliosec1, portfoliosec2);
+    container7.append(wrapper4);
+}
+sectionfun7();

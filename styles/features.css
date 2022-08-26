@@ -141,6 +141,42 @@ hr {
     color: #1d1e1c;
 }
 
+.wrapper4 {
+    display: flex;
+    gap: 40px;
+}
+
+#container4,
+#container7 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.portsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comment {
+    font-size: 30px;
+    line-height: 45px;
+    padding-bottom: 25px;
+}
+
+.authorName,
+.occup {
+    line-height: 35px;
+}
+
+.occup {
+    font-size: 18px;
+}
+
+.image6 {
+    border-radius: 20px 0px 20px 0px;
+}
 
 
 @media screen and (max-width:1050px) {

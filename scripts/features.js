@@ -23,6 +23,9 @@ let container4 = document.querySelector('#container4');
 let container5 = document.querySelector('#container5');
 let container6 = document.querySelector('#container6');
 let container7 = document.querySelector('#container7');
+let container8 = document.querySelector('#container8');
+let container9 = document.querySelector('#container9');
+let container10 = document.querySelector('#container10');
 
 let trackData = [{
     image: 'https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg',
@@ -58,6 +61,16 @@ let sectionfun1 = (dataa) => {
         let child1Div = document.createElement('div');
         child1Div.setAttribute('class', 'childDiv');
         child1Div.style.border = "1px solid red";
+        child1Div.addEventListener('click',myfun);
+        function myfun(){
+        if(elem.para == 'Time tracking'){
+            window.location.href="#container2";
+        }else if(elem.para == 'Reports & analysis'){
+            window.location.href="#container5";
+        }else if(elem.para == 'Invoicing & payments'){
+            window.location.href="#container8";
+        }
+        }
         let littleSec1 = document.createElement('div');
         littleSec1.setAttribute('class', 'littlesec');
         let image1 = document.createElement("img");
@@ -94,9 +107,10 @@ let sectionfun2 = () => {
     p2.setAttribute('class', 'p2');
     let btn2 = document.createElement('button');
     btn2.innerText = 'Start your free trial';
-    btn2.addEventListener('click',()=>{
-        window.location.href='signup.html';
-    })
+    btn2.addEventListener('click',funbtn);
+    function funbtn(){
+        window.location.href="signup.html";
+    }
     btn2.setAttribute('class', 'btn2');
     childsec1.append(head, p2, btn2);
     let childsec2 = document.createElement('div');
@@ -188,9 +202,10 @@ let sectionfun5 = () => {
     p2.setAttribute('class', 'p2');
     let btn2 = document.createElement('button');
     btn2.innerText = 'Start your free trial';
-    btn2.addEventListener('click',()=>{
-        window.location.href='signup.html';
-    })
+    btn2.addEventListener('click',funbtn);
+    function funbtn(){
+        window.location.href="signup.html";
+    }
     btn2.setAttribute('class', 'btn2');
     childsec1.append(head, p2, btn2);
     let childsec2 = document.createElement('div');
@@ -284,3 +299,102 @@ let sectionfun7 = () => {
     container7.append(wrapper4);
 }
 sectionfun7();
+let sectionfun8 = () => {
+    let wrapper2 = document.createElement('div');
+    wrapper2.setAttribute('class', 'wrapper2');
+    let childsec1 = document.createElement('div');
+    childsec1.setAttribute('class', 'childsec1');
+    let head = document.createElement('h2');
+    head.innerText = 'Invoicing & payments';
+    head.setAttribute('class', 'headh2');
+    let p2 = document.createElement('p');
+    p2.innerText = 'Turn your team’s tracked time and expenses into invoices and collect payment quickly with integrated online payments.';
+    p2.setAttribute('class', 'p2');
+    let btn2 = document.createElement('button');
+    btn2.innerText = 'Start your free trial';
+    btn2.addEventListener('click',funbtn);
+    function funbtn(){
+        window.location.href="signup.html";
+    }
+    btn2.setAttribute('class', 'btn2');
+    childsec1.append(head, p2, btn2);
+    let childsec2 = document.createElement('div');
+    let image = document.createElement('img');
+    image.setAttribute('src', 'https://www.getharvest.com/hs-fs/hubfs/screenshot-features-invoices-1.png?width=787&name=screenshot-features-invoices-1.png');
+    image.setAttribute('class', 'image');
+    childsec2.append(image);
+    wrapper2.append(childsec1, childsec2);
+    container8.append(wrapper2);
+}
+sectionfun8();
+
+let data3 = [{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-invoice.svg",
+    head: "Streamline your invoicing",
+    para: 'Easily create and send accurate invoices using your team’s time and expenses already tracked in Harvest.',
+},
+{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-payments.svg",
+    head: "Get paid fast with online payments",
+    para: 'PayPal and Stripe integrations let your clients quickly and conveniently pay invoices online.',
+},
+{
+    image: "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-books.svg",
+    head: "Keep your books up to date",
+    para: 'Automatically copy your Harvest invoices and payments to QuickBooks Online or Xero for simplified accounting.',
+}];
+let sectionfun9 = (data) => {
+    let wrapper3 = document.createElement('div');
+    wrapper3.setAttribute('class', 'wrapper3')
+    data.forEach(elem => {
+        let childsec = document.createElement('div');
+        childsec.setAttribute('class', 'childsec');
+        let smallchild = document.createElement('div');
+        smallchild.setAttribute('class', 'smallchild');
+        // childsec.style.border='1px solid red';
+        let image4 = document.createElement('img');
+        image4.setAttribute('src', elem.image);
+        let headh4 = document.createElement('h4');
+        headh4.setAttribute('class', 'headh4');
+        headh4.innerText = elem.head;
+        let p3 = document.createElement('p');
+        p3.setAttribute('class', 'p3');
+        p3.innerText = elem.para;
+        smallchild.append(image4, headh4);
+        childsec.append(smallchild, p3);
+        wrapper3.append(childsec);
+        container9.append(wrapper3);
+    });
+}
+sectionfun9(data3);
+
+let sectionfun10 = () => {
+    let wrapper2 = document.createElement('div');
+    wrapper2.setAttribute('class', 'wrapper2');
+    let childsec1 = document.createElement('div');
+    childsec1.setAttribute('class', 'childsec_1');
+    let head = document.createElement('h2');
+    head.innerText = 'Start tracking time today';
+    head.setAttribute('class', 'headh2');
+    head.style.color = 'black';
+    let p2 = document.createElement('p');
+    p2.innerText = 'Join 70,000+ companies spending their time wisely with Harvest.';
+    p2.setAttribute('class', 'p2content');
+    let btn2 = document.createElement('button');
+    btn2.innerText = 'Try Harvest free';
+    btn2.addEventListener('click',funbtn);
+    function funbtn(){
+        window.location.href="signup.html";
+    }
+    btn2.setAttribute('class', 'btn2');
+    childsec1.append(head, p2, btn2);
+    let childsec_2 = document.createElement('div');
+    childsec_2.setAttribute('class', 'childsec_2')
+    let image = document.createElement('img');
+    image.setAttribute('src', 'https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg');
+    image.setAttribute('class', 'imagelast');
+    childsec_2.append(image);
+    wrapper2.append(childsec1, childsec_2);
+    container10.append(wrapper2);
+}
+sectionfun10();

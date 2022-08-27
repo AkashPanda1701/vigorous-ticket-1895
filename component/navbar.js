@@ -1,15 +1,24 @@
 function navbar() {
+  window.onscroll=function(e) {
+    if(window.pageYOffset>5){
+      document.querySelector('header').style.boxShadow="rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px";
+    }else{
+      
+      document.querySelector('header').style.boxShadow="none";
+
+    }
+  }
   return `<div id="navbar">
     <div>
       <img id="orange" src="https://i.ibb.co/pXRS2p3/image.png" alt="" />
       <img id="black" src="https://i.ibb.co/qCVbqVB/image.png" alt="" />
-      <a href="#">Why Harvest?</a>
-      <a href="#">Features</a>
-      <a href="#">Customers</a>
+      <a href="about.html">Why Harvest?</a>
+      <a href="features.html">Features</a>
+      <a href="customers.html">Customers</a>
     </div>
     <div>
-      <a href="#">Sign in</a>
-      <button class="signup"><a href="#">Try Harvest free</a></button>
+      <a href="login.html">Sign in</a>
+      <button class="signup"><a href="signup.html">Try Harvest free</a></button>
       <button id="menu">
         <img id="openmenu"
           src="http://dce.rocketausgate.com/_images/menu-icon.png"
@@ -22,14 +31,14 @@ function navbar() {
   </div>
   <div id="menudiv">
     <div>
-      <div><a href="#"> Why Harvest?</a></div>
-      <div><a href="#"> Features</a></div>
-      <div><a href="#"> Customers</a></div>
+      <div><a href="about.html"> Why Harvest?</a></div>
+      <div><a href="features.html"> Features</a></div>
+      <div><a href="customers.html"> Customers</a></div>
     </div>
 
     <div>
-      <button class="menuBtn"><a href="#">Sign in</a></button>
-      <button class="menuBtn"><a href="#">Try Harvest free</a></button>
+      <button class="menuBtn"><a href="login.html">Sign in</a></button>
+      <button class="menuBtn"><a href="signup.html">Try Harvest free</a></button>
     </div>
   </div>`;
 }

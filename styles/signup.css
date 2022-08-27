@@ -10,6 +10,9 @@ body {
   background-image: url("https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/auras/aura-top-right-corner.png");
 }
 
+#logo{
+  cursor: pointer;
+}
 #container {
   width: 85%;
   margin: auto;

@@ -8,6 +8,14 @@ import footer from '../component/footer.js';
 console.log('footer:', footer);
 document.querySelector("footer").innerHTML = footer();
 
+document.getElementById('orange').addEventListener('click',()=>{
+    window.location.href='index.html';
+})
+
+document.getElementById('black').addEventListener('click',()=>{
+    window.location.href='index.html';
+})
+
 let container = document.querySelector('#container');
 let container2 = document.querySelector('#container2');
 let container3 = document.querySelector('#container3');

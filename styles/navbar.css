@@ -10,6 +10,12 @@ header{
     position: sticky;
     top: 0;
     background-color: #fff6ed;
+    font-family:  'Poppins', sans-serif;
+    
+}
+body{
+    background-color: #fff6ed;
+
 }
 #navbar{
     width: 80%;
@@ -29,8 +35,13 @@ header{
     gap: 10px;
 }
 
+#orange{
+    cursor: pointer;
+}
+
 #black{
     display: none;
+    cursor: pointer;
 }
 #navbar a{
     font-size: 17px;

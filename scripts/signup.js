@@ -1,3 +1,8 @@
+document.querySelector('#logo').addEventListener('click',()=>{
+  window.location.href='index.html';
+});
+
+
 document.querySelector("form button").addEventListener("click", Register);
 
 let RegisterUser = JSON.parse(localStorage.getItem("RegisterUser")) || [];

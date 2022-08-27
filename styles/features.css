@@ -5,7 +5,10 @@ body {
     color: #1d1e1c;
     font-weight: normal;
 }
-
+body>div{
+    width: 80%;
+    margin: auto;
+}
 #container {
     width: 90%;
     margin: auto;

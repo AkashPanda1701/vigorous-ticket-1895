@@ -94,6 +94,9 @@ let sectionfun2 = () => {
     p2.setAttribute('class', 'p2');
     let btn2 = document.createElement('button');
     btn2.innerText = 'Start your free trial';
+    btn2.addEventListener('click',()=>{
+        window.location.href='signup.html';
+    })
     btn2.setAttribute('class', 'btn2');
     childsec1.append(head, p2, btn2);
     let childsec2 = document.createElement('div');
@@ -185,6 +188,9 @@ let sectionfun5 = () => {
     p2.setAttribute('class', 'p2');
     let btn2 = document.createElement('button');
     btn2.innerText = 'Start your free trial';
+    btn2.addEventListener('click',()=>{
+        window.location.href='signup.html';
+    })
     btn2.setAttribute('class', 'btn2');
     childsec1.append(head, p2, btn2);
     let childsec2 = document.createElement('div');

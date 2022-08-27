@@ -74,20 +74,73 @@ storyFeatureDiv.setAttribute("class","storyFeatureDiv");
 
 let storyImageDiv_img = document.createElement("img");
 storyImageDiv_img.src = "https://www.getharvest.com/hs-fs/hubfs/customer-profile.jpg?width=1181&name=customer-profile.jpg";
+storyImageDiv_img.setAttribute("class","storyImageDiv_img");
 
 storyImageDiv.append(storyImageDiv_img);
 
 let storyFeatureDiv_p = document.createElement("p");
 storyFeatureDiv_p.innerText = "Featured Story";
+storyFeatureDiv_p.setAttribute("class","storyFeatureDiv_p");
 
 let storyFeatureDiv_h = document.createElement("h3");
 storyFeatureDiv_h.innerText = "Startup studio Dovetail tracks time with Harvest to build trust with clients.";
+storyFeatureDiv_h.setAttribute("class","storyFeatureDiv_h");
 
 let storyFeatureDiv_a = document.createElement("button");
 storyFeatureDiv_a.innerText = "Read customer story";
+storyFeatureDiv_a.setAttribute("class","storyFeatureDiv_a");
 
 storyFeatureDiv.append(storyFeatureDiv_p,storyFeatureDiv_h,storyFeatureDiv_a);
 
 storyDiv.append(storyImageDiv,storyFeatureDiv);
 
-container1.append(headline1,headline2,trackDiv,storyDiv);
+let logoDiv = document.createElement("div");
+logoDiv.setAttribute("class","logoDiv");
+
+let logoArr = [
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize",
+    },
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize",
+    },
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-conde.svg?noresize",
+    },
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-dell.svg?noresize",
+    },
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-amnesty.svg?noresize",
+    },
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-deloitte.svg?noresize",
+    },
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize",
+    },
+    {
+        img:"https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize",
+    }
+];
+
+let AppendLogo = (data) => {
+
+    data.forEach(({img}) => {
+
+        let logo = document.createElement("div");
+        logo.setAttribute("class","logo");
+
+        let image = document.createElement("img");
+        image.src = img;
+
+        logo.append(image);
+
+        logoDiv.append(logo);
+    });
+
+}
+
+AppendLogo(logoArr);
+
+container1.append(headline1,headline2,trackDiv,storyDiv,logoDiv);

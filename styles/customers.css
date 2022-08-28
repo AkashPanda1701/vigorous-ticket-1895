@@ -11,6 +11,10 @@
    
 
 }
+button>a{
+    text-decoration:none;
+    color:white;
+}
 h2 {
     font-weight: 400;
     text-decoration: none;
@@ -406,27 +410,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .trail-actions>button {
     background-color: rgba(250,93,0,100%);
-    border-color: rgba(250,93,0,100%);
-    border: 1px solid rgba(29,30,28,100%);
+    border: none;
     border-radius: 16px;
-    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
     box-sizing: border-box;
     color: rgba(255,248,241,100%);
     cursor: pointer;
-    display: inline-block;
-    font-family: "MuotoWeb","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px;
     font-weight: 600;
-    line-height: 1;
     padding: 14px 22px 14px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    -webkit-appearance: none;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    white-space: normal;
+ 
 }
 .trail-terms {
     font-size: 18px;

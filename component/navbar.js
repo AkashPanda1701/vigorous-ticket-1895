@@ -8,6 +8,8 @@ function navbar() {
 
     }
   }
+
+
   return `<div id="navbar">
     <div>
       <img id="orange" src="https://i.ibb.co/pXRS2p3/image.png" alt="" />
@@ -17,7 +19,7 @@ function navbar() {
       <a href="customers.html">Customers</a>
     </div>
     <div>
-      <a href="login.html">Sign in</a>
+      <a href="login.html" id='user'>Sign in</a>
       <button class="signup"><a href="signup.html">Try Harvest free</a></button>
       <button id="menu">
         <img id="openmenu"
@@ -55,4 +57,25 @@ function closeMenu() {
   document.getElementById("openmenu").style.display = "inherit";
 }
 
-export { navbar, openMenu, closeMenu };
+
+function checklogin() {
+  
+  let username=localStorage.getItem('username');
+
+  if(username){
+  let user=document.querySelector('#user');
+  user.href='#';
+  user.innerText=`Hi, ${username}`;
+
+  let logout=document.querySelector('.signup');
+  logout.innerHTML='';
+  logout.innerText='Logout';
+  logout.onclick=function(e) {
+    localStorage.removeItem('username');
+    window.location.href='login.html';
+
+  }
+}
+}
+
+export { navbar, openMenu, closeMenu ,checklogin};

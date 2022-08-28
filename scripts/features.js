@@ -1,4 +1,4 @@
-import {navbar,openMenu,closeMenu} from '../component/navbar.js';
+import { navbar, openMenu, closeMenu ,checklogin} from '../component/navbar.js';
 console.log(navbar);
 document.querySelector("header").innerHTML=navbar();
 document.querySelector("#openmenu").addEventListener('click',openMenu);
@@ -15,6 +15,8 @@ document.getElementById('orange').addEventListener('click',()=>{
 document.getElementById('black').addEventListener('click',()=>{
     window.location.href='index.html';
 })
+
+checklogin();
 
 let container = document.querySelector('#container');
 let container2 = document.querySelector('#container2');
